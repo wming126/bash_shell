@@ -70,7 +70,21 @@ done
 echo "The for loop is completed"
 
 # continue 结束本次循环
+for (( var1 = 1; var1 < 15; var1++ ));do
+    if [ $var1 -gt 5 ] && [ $var1 -lt 10 ];then
+        continue
+    fi
+    echo "Iteration number:$var1"
+done
 
+
+# 可以对循环的输出使用管道或者重定向
+for (( var1 = 1; var1 < 15; var1++ ));do
+    if [ $var1 -gt 5 ] && [ $var1 -lt 10 ];then
+        continue
+    fi
+    echo "Iteration number:$var1"
+done > for_output.txt
 
 
 
