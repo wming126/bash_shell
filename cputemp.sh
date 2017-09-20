@@ -31,7 +31,7 @@ do
     cat /proc/cputemp
 
     # print last time
-    echo Last times $var
+    echo Last times:$var
 done
 
 exit 0
